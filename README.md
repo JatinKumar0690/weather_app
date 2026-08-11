@@ -26,11 +26,6 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 You will need a modern web browser and a free API key from your weather data provider (e.g., [OpenWeatherMap](https://openweathermap.org/api)).
 
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/](https://github.com/)[Your-Username]/[Your-Repo-Name].git
 
 
 👨‍💻 Author
