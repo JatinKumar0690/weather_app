@@ -1,3 +1,4 @@
+require('dotenv').config();
 const searchBtn = document.querySelector(".search-btn");
 const input = document.querySelector(".input");
 const weatherImg = document.querySelector(".img");
@@ -8,11 +9,13 @@ const windSpeed = document.querySelector(".wind-speed");
 const locationNotFound = document.querySelector(".location-not-found");
 const weatherBody = document.querySelector(".weather-body");
 
-console.log(locationNotFound,weatherBody);
+
 
 
 async function checkWeather (city) {
-    const apiKey = "5e13c44d98687f9b5a0be49bca4dd363"
+    console.log(process.env.WEATHER_URI);
+        
+    const apiKey = process.env.WEATHER_URI; //Use Your api key
     const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
     const response = await fetch (URL);
     const data = await response.json();
